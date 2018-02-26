@@ -6,7 +6,7 @@
 <script type="text/javascript">
   var BASE_URL = '{{constants['BASE_URL']}}';
   var STATICS_URL  = '{{constants['STATICS_URL']}}';
-  //var DATA = JSON.parse('{% raw data %}');
+  var DATA = JSON.parse('{% raw data %}');
 </script>
 {% end %}
 {% block js_bottom %}
@@ -14,16 +14,5 @@
 <script type="text/javascript" src="{{constants['STATICS_URL']}}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 {% end %}
 {% block content %}
-<form action="{{constants['BASE_URL']}}login/acceder" method="post">
-  Usuario<br>
-  <input type="text" name="usuario">
-  <br>
-  Contraseña<br>
-  <input type="password" name="contrasenia">
-  <br><br>
-  <input type="submit" value="Ingresar" class="btn btn-primary">
-  {%if data == True%}
-  <label class="color-rojo">Usario y/o contraseña incorrectos</label>
-  {%end%}
-</form>
+<h1>home</h1>
 {% end %}
