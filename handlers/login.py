@@ -25,3 +25,21 @@ class LoginAcceder(BaseHandler):
     else:
       self.render('handlers/login.html', constants= constants, title= 'Login', data= True)
       return
+
+class LoginEstado(BaseHandler):
+  def get(self):
+    rpta = ''
+    if not self.get_secure_cookie('usuario'):
+      rpta = '<h1>El usuario no se encuentra logueado</h1>'
+    else:
+      rpta = '<h1>Usuario Logeado</h1><ul><li>' + str(self.get_secure_cookie('usuario')) + '</li><li>' +  str(self.get_secure_cookie('tiempo')) + '</li></ul>'
+    self.write(rpta)
+
+class LoginSalir(BaseHandler):
+  def get(self):
+    if self.get_secure_cookie('usuario'):
+      self.clear_cookie('usuario')
+    if self.get_secure_cookie('tiempo'):
+      self.clear_cookie('tiempo')
+    self.redirect('/login')
+    return
