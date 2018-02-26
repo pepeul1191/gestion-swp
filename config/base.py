@@ -5,7 +5,7 @@ import logging
 
 logger = logging.getLogger('boilerplate.' + __name__)
 
-class Base(tornado.web.RequestHandler):
+class BaseHandler(tornado.web.RequestHandler):
   def set_default_headers(self):
     self.set_header('Content-type', 'text/html; charset=UTF-8')
     self.set_header('Server', 'TornadoServer/4.5.1; Ubuntu; Python')
