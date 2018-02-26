@@ -7,4 +7,4 @@ from config.base import BaseHandler
 class LoginIndex(BaseHandler):
   def get(self):
     self.set_status(200)
-    self.render('handlers/login.html', constants= constants, title= 'Login')
+    self.render('handlers/login.html', constants= constants, title= 'Login', data= 'false')

@@ -1,12 +1,17 @@
 {% extends '../layouts/blank.html' %}
 {% block css %}
-
+<link href="{{constants['STATICS_URL']}}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 {% end %}
 {% block js_top %}
-
+<script type="text/javascript">
+  var BASE_URL = '{{constants['BASE_URL']}}';
+  var STATICS_URL  = '{{constants['STATICS_URL']}}';
+  var DATA = JSON.parse('{% raw data %}');
+</script>
 {% end %}
 {% block js_bottom %}
-
+<script type="text/javascript" src="{{constants['STATICS_URL']}}bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="{{constants['STATICS_URL']}}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 {% end %}
 {% block content %}
 <form action="{{constants['BASE_URL']}}login/acceder" method="post">
@@ -16,6 +21,6 @@
   Contraseña<br>
   <input type="text" name="contraseña">
   <br><br>
-  <input type="submit" value="Ingresar">
+  <input type="submit" value="Ingresar" class="btn btn-primary">
 </form>
 {% end %}

@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  {% block css %}{% end %}
+  {% block js_top %}{% end %}
 </head>
-<body>
+<body class="container">
 	<h1>Header</h1>
 	{% block content %}{% end %}
 	<h1>Footer</h1>
+  {% block js_bottom %}{% end %}
 </body>
 </html>

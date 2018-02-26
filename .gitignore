@@ -1,6 +1,6 @@
 *.pyc
-/media/bower_components
-/media/dist
+/static/bower_components
+/static/dist
 /node_modules
 package-lock.json
 .DS_Store
