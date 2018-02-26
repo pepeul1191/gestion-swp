@@ -9,13 +9,13 @@
 
 {% end %}
 {% block content %}
-<form action="/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
+<form action="{{constants['BASE_URL']}}login/acceder" method="post">
+  Usuario<br>
+  <input type="text" name="usuario">
   <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
+  Contraseña<br>
+  <input type="text" name="contraseña">
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Ingresar">
 </form>
 {% end %}
