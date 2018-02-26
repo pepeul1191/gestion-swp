@@ -24,6 +24,8 @@ Arrancar servidor Torando
 
 + http://www.tornadoweb.org/en/stable/
 + https://github.com/pepeul1191/tornado-animalitos
++ https://simplapi.wordpress.com/2014/03/26/python-tornado-and-decorator/
++ https://stackoverflow.com/questions/47010763/tornado-asynchronous-actions-in-custom-decorator
 
 Thanks/Credits
 

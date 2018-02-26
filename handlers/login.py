@@ -5,13 +5,10 @@ import requests
 import datetime
 import json
 from config.base import Base
+from config.middleware import enable_cors
 
 class LoginIndex(Base):
-  def set_default_headers_nuevo(self):
-    print('set_default_headers!!!!!!!!!!!!!!!!!!!!!')
-    self.set_header("Access-Control-Allow-Origin", "*")
-
+  @enable_cors()
   def get(self):
-    self.set_default_headers_nuevo()
     self.set_status(400)
     self.write("<h1>LOGIN</h1>")
