@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import tornado.web
+from handlers.login import *
 
 class MainHandler(tornado.web.RequestHandler):
   def get(self):
@@ -8,4 +9,5 @@ class MainHandler(tornado.web.RequestHandler):
 
 routes = [
   (r'/', MainHandler),
+  (r'/login', LoginIndex),
 ]
