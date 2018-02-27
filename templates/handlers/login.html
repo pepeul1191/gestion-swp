@@ -1,6 +1,7 @@
 {% extends '../layouts/blank.html' %}
 {% block css %}
 <link href="{{constants['STATICS_URL']}}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="{{constants['STATICS_URL']}}bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 {% end %}
 {% block js_top %}
 <script type="text/javascript">
@@ -23,7 +24,8 @@
   <br><br>
   <input type="submit" value="Ingresar" class="btn btn-primary">
   {%if data == True%}
-  <label class="color-rojo">Usario y/o contraseña incorrectos</label>
+  <br>
+  <label class="color-rojo"><i class="fa fa-user" aria-hidden="true"></i>Usuario y/o contraseña incorrectos</label>
   {%end%}
 </form>
 {% end %}
