@@ -36,10 +36,10 @@ Ejecutar el 'up' de las migraciones hasta un versión especifica:
 
     $ sequel -m db/migrations -M #version mysql://root:123@localhost/gestion
 
-Migraciones:
+Migraciones hacia SQLite3:
 
     $ sequel -m db/migrations_ubicaciones -M 3 sqlite://db/ubicaciones.db
-    $ sequel -m db/migrations_accesos -M 11 sqlite://db/accesos.db
+    $ sequel -m db/migrations_accesos -M 14 sqlite://db/accesos.db
 
 Crear Vista de distrito/provincia/departamento
 
