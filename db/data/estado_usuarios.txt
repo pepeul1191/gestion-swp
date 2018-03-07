@@ -1,0 +1,4 @@
+activo
+eliminado
+bloqueado
+suspendido
