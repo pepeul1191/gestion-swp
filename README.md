@@ -39,7 +39,7 @@ Ejecutar el 'up' de las migraciones hasta un versión especifica:
 Migraciones:
 
     $ sequel -m db/migrations_ubicaciones -M 3 sqlite://db/ubicaciones.db
-    $ sequel -m db/migrations_accesos -M 8 sqlite://db/accesos.db
+    $ sequel -m db/migrations_accesos -M 9 sqlite://db/accesos.db
 
 Crear Vista de distrito/provincia/departamento
 
