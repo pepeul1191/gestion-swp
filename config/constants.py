@@ -1,6 +1,6 @@
 constants = {
   'BASE_URL' : 'http://localhost:8888/',
-  'STATICS_URL' : 'http://localhost:8888/static/',
+  'STATICS_URL' : 'http://localhost:9090/',
   'CSRF' : 'mpt/sr6eS2AlCRHU7DVThMgFTN08pnfSDf/C94eZx7udfm0lvgaYWLYJttYPKzGKDTlXwVU/d2FOxbKkgNlsTw==',
   'ambiente' : 'desarrollo',
   'key' : 'Fdp6CVxpri1ga8kH',
