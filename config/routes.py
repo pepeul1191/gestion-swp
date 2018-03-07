@@ -4,6 +4,8 @@ import tornado.web
 from handlers.login import LoginIndex, LoginAcceder, LoginEstado, LoginSalir
 from handlers.home import HomeIndex
 from ubicaciones.departamento import *
+from ubicaciones.provincia import *
+from ubicaciones.distrito import *
 
 routes = [
   (r'/', HomeIndex),
@@ -12,4 +14,6 @@ routes = [
   (r'/usuario/ver', LoginEstado),
   (r'/usuario/salir', LoginSalir),
   (r'/ubicaciones/departamento/listar', UbicacionesDepartamentoListar),
+  (r'/ubicaciones/provincia/listar/([0-9]+)', UbicacionesProvinciaListar),
+  (r'/ubicaciones/distrito/listar/([0-9]+)', UbicacionesDistritoListar),
 ]
