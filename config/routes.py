@@ -16,7 +16,9 @@ routes = [
   # ubicaciones
   (r'/ubicaciones/departamento/listar', UbicacionesDepartamentoListar),
   (r'/ubicaciones/departamento/guardar', UbicacionesDepartamentoGuardar),
-  (r'/ubicaciones/provincia/listar/([0-9]+)', UbicacionesProvinciaListar),
   (r'/ubicaciones/distrito/listar/([0-9]+)', UbicacionesDistritoListar),
   (r'/ubicaciones/distrito/buscar', UbicacionesDistritoBuscar),
+  (r'/ubicaciones/distrito/guardar', UbicacionesDistritoGuardar),
+  (r'/ubicaciones/provincia/listar/([0-9]+)', UbicacionesProvinciaListar),
+  (r'/ubicaciones/provincia/guardar', UbicacionesProvinciaGuardar),
 ]
