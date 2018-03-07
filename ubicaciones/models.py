@@ -6,6 +6,7 @@ class Departamento(Base):
   __tablename__ = 'departamentos'
   id = Column(Integer, primary_key=True)
   nombre = Column(String)
+  pais_id = Column(Integer)
 
 class Provincia(Base):
   __tablename__ = 'provincias'

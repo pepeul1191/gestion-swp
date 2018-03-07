@@ -6,3 +6,5 @@ package-lock.json
 .DS_Store
 Gemfile.lock
 .vscode/settings.json
+
+db/ubicaciones.db
