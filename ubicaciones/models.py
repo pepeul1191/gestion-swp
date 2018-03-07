@@ -22,3 +22,4 @@ class Distrito(Base):
 class VWDistritoProvinciaDepartamento(Base):
   __tablename__ = 'vw_distrito_provincia_departamento'
   id = Column(Integer, primary_key=True)
+  nombre = Column(String)
